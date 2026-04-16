@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh Copy Teks</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+        textarea {
+            width: 100%;
+            height: 100px;
+            font-size: 16px;
+            padding: 10px;
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Contoh Halaman HTML Copy</h1>
+    <p>Masukkan teks di bawah ini, lalu klik tombol untuk menyalin ke clipboard:</p>
+
+    <textarea id="myText">Halo, ini teks contoh yang bisa disalin!</textarea>
+    <br>
+    <button onclick="copyText()">Salin Teks</button>
+
+    <script>
+        function copyText() {
+            try {
+                // Ambil elemen textarea
+                const textArea = document.getElementById("myText");
+                textArea.select(); // Pilih teks
+                textArea.setSelectionRange(0, 99999); // Untuk mobile
+
+                // Salin ke clipboard
+                navigator.clipboard.writeText(textArea.value)
+                    .then(() => {
+                        alert("Teks berhasil disalin!");
+                    })
+                    .catch(err => {
+                        alert("Gagal menyalin teks: " + err);
+                    });
+            } catch (error) {
+                alert("Terjadi kesalahan: " + error.message);
+            }
+        }
+    </script>
+
+</body>
+</html>
