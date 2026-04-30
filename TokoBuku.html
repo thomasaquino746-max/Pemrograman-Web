@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Toko Buku</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* HEADER */
+header {
+    background: #2c3e50;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+header a:hover {
+    color: orange;
+}
+
+/* HERO */
+.hero {
+    background: url('https://images.unsplash.com/photo-1512820790803-83ca734da794') no-repeat center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 40px;
+}
+
+/* BODY */
+.body-section {
+    padding: 20px;
+    text-align: center;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* CARD */
+.card {
+    width: 220px;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* CONTACT */
+.contact {
+    background: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+.contact input, .contact textarea {
+    width: 80%;
+    padding: 8px;
+    margin: 5px;
+}
+
+button {
+    padding: 10px;
+    background: #e67e22;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #d35400;
+}
+
+/* FOOTER */
+footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+</style>
+
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+    <h2>Toko Buku</h2>
+    <div>
+        <a href="#">Home</a>
+        <a href="#">Buku</a>
+        <a href="#">Contact</a>
+    </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <h1>Temukan Buku Favorit Anda</h1>
+    <p>Novel | Pendidikan | Komik | Motivasi</p>
+</section>
+
+<!-- BODY -->
+<section class="body-section">
+    <h2>Daftar Buku</h2>
+
+    <div class="gallery">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f">
+            <h3>Novel</h3>
+            <p>Mulai Rp 75.000</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba">
+            <h3>Buku Pelajaran</h3>
+            <p>Mulai Rp 50.000</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f">
+            <h3>Komik</h3>
+            <p>Mulai Rp 30.000</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66">
+            <h3>Motivasi</h3>
+            <p>Mulai Rp 60.000</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact">
+    <h2>Hubungi Kami</h2>
+
+    <input type="text" placeholder="Nama"><br>
+    <input type="email" placeholder="Email"><br>
+    <textarea placeholder="Pesan"></textarea><br>
+
+    <button>Kirim</button>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 Toko Buku | Nama Teman Kamu</p>
+</footer>
+
+</body>
+</html>
