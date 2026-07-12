@@ -52,6 +52,47 @@
             <div class="bg-white rounded-lg shadow mt-8 p-6">
 
     <h3 class="text-xl font-semibold mb-4">
+        Akses Cepat
+    </h3>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+
+        <a href="{{ route('categories.index') }}"
+            class="bg-blue-600 hover:bg-blue-700 text-white rounded-lg p-5 text-center transition">
+
+            <h4 class="text-lg font-bold"> Daftar Kategori</h4>
+            <p class="text-sm mt-2">
+                Kelola seluruh kategori produk.
+            </p>
+
+        </a>
+
+        <a href="{{ route('products.index') }}"
+            class="bg-green-600 hover:bg-green-700 text-white rounded-lg p-5 text-center transition">
+
+            <h4 class="text-lg font-bold"> Daftar Produk</h4>
+            <p class="text-sm mt-2">
+                Tambah, ubah, dan lihat data produk.
+            </p>
+
+        </a>
+
+        <a href="{{ route('reports.incoming') }}"
+            class="bg-purple-600 hover:bg-purple-700 text-white rounded-lg p-5 text-center transition">
+
+            <h4 class="text-lg font-bold"> Laporan Barang Masuk</h4>
+            <p class="text-sm mt-2">
+                Lihat dan cetak laporan barang masuk.
+            </p>
+
+        </a>
+
+    </div>
+
+</div>
+            <div class="bg-white rounded-lg shadow mt-8 p-6">
+
+    <h3 class="text-xl font-semibold mb-4">
         Produk dengan Stok Menipis
     </h3>
 
